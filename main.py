@@ -1,6 +1,6 @@
 # initialize database connection
 import pymongo
-client=pymongo.MongoClient("mongodb+srv://root:root123@kaicluster.f9neu2k.mongodb.net/?retryWrites=true&w=majority")
+client=pymongo.MongoClient("mongodb+srv://root:<password>@kaicluster.f9neu2k.mongodb.net/?retryWrites=true&w=majority")
 db=client.member.member_system
 print("Database initialized successfully!")
 
