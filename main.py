@@ -89,7 +89,9 @@ def signin():
     print(result)
     session["name"]=result["Username"]
     # login successfully, redirect to member page
-    return redirect("/member")
+    name=result["Username"]
+    return render_template("member.html", username=name)
+    # return redirect("/member")
 
 # sign out
 @app.route("/signout")
