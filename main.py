@@ -99,4 +99,5 @@ def signout():
     del session["name"]
     return redirect("/")
 
-app.run(port=300)
+if __name__ == "__main__":
+    app.run(port=3000)
